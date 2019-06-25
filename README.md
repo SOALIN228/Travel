@@ -28,3 +28,18 @@ npm run build --report
     height: 0
     padding-bottom: 31.25%
     ```
+2. 使用 computed 来实现 icons 页面的翻页
+    ```javascript
+    pages () {
+      const pages = []
+      this.iconList.forEach((item, index) => {
+        const page = Math.floor(index / 8)
+        if (!pages[page]) {
+          pages[page] = []
+        }
+        pages[page].push(item)
+      })
+      return pages
+    }
+    ```
+    
