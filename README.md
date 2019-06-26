@@ -46,3 +46,5 @@ npm run build --report
 4. 轮播展示时，使用 computed 判断数据不为空时进行渲染，否则会默认显示最后一张图片
 5. 使用 mock 做模拟数据，在 devserver 中配置 proxyTable 做接口转发，提高开发效率
 6. 使用 better-scroll 插件模拟类似微信好友滚动列表，记得添加 overflow: hidden
+7. 简单的组件通信，可以通过父组件来实现，接收数据的子组件通过 watch 监听接收数据变化
+8. 可以把经常操作且不变的数据，放到 update 中，避免重复创建，对手指事件使用节流
