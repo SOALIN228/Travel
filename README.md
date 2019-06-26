@@ -48,3 +48,4 @@ npm run build --report
 6. 使用 better-scroll 插件模拟类似微信好友滚动列表，记得添加 overflow: hidden
 7. 简单的组件通信，可以通过父组件来实现，接收数据的子组件通过 watch 监听接收数据变化
 8. 可以把经常操作且不变的数据，放到 update 中，避免重复创建，对手指事件使用节流
+9. 使用 vuex 做组件之间数据的传递，使用 localStorage 做本地存储，记得要处理异常，解决浏览器兼容问题
