@@ -13,6 +13,7 @@ module.exports = {
     proxyTable: {
       '/api': { // 接口转发
         target: 'http://localhost:8080',
+        changeOrigin: true, // 允许跨域
         pathRewrite: {
           '^/api': '/static/mock'
         }
