@@ -67,5 +67,18 @@ npm run build --report
 16. router 使用 component: () => import('@/page/home/Home') 按需加载提高首屏速度，同理，组件也可以使用按需加载
     
     **注**:如过打包后的页面很小，不需要按需加载，因为多发一个http请求会比多加载一个 js 还要慢
+17. 跨域配置 config 中的 index.js
+    ```javascript
+    proxyTable: {
+      '/api': { // 转发 /api 的接口 
+        target: 'http://localhost:8080', // 设置域名
+        changeOrigin: true, // 允许跨域
+        pathRewrite: {
+          '^/api': '/static/mock' // 设置转发路径，将/api转为/static/mock
+        }
+      }
+    } 
+    ```
+    
     
    
