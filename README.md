@@ -53,3 +53,7 @@ npm run build --report
 11. 使用 v-show 切换轮播时，由于 DOM 发生了改变 swiper 会出现问题
 
     解决：使用observeParents: true, observer: true让 swiper 在DOM改变时自动刷新
+12. 如果在组件中绑定事件，在组件移除时一定要及时进行事件解绑，避免造成全局的影响
+    如果使用了 keep-alive 在 activated 进行事件绑定，那就在 deactivated 进行事件解绑
+    
+   
