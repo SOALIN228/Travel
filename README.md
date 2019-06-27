@@ -56,5 +56,12 @@ npm run build --report
 12. 如果在组件中绑定事件，在组件移除时一定要及时进行事件解绑，避免造成全局的影响
 
     如果使用了 keep-alive 在 activated 进行事件绑定，那就在 deactivated 进行事件解绑
+13. 使用 keepalive 后，如果不想使用缓存可以设置 keep-alive exclude="Detail" 这样 Detail 页面就不会进行缓存了
+14. 组件之间的滚动会相互影响，需要在路由中配置每次打开都是起始位置
+    ```javascript
+    scrollBehavior (to, from, savedPosition) {
+      return { x: 0, y: 0 }
+    }
+    ```
     
    
