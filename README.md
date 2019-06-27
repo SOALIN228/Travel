@@ -64,5 +64,8 @@ npm run build --report
     }
     ```
 15. babel-polyfill 可以解决浏览器不支持 ES6 新特性的问题
+16. router 使用 component: () => import('@/page/home/Home') 按需加载提高首屏速度，同理，组件也可以使用按需加载
+    
+    **注**:如过打包后的页面很小，不需要按需加载，因为多发一个http请求会比多加载一个 js 还要慢
     
    
