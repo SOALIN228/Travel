@@ -12,7 +12,7 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
       '/api': { // 接口转发
-        target: 'https://soalin228.github.io',
+        target: 'https://soalin228.github.io/Travel/dist',
         // pathRewrite: {
         //   '^/api': '/static/mock'
         // }
