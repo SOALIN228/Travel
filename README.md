@@ -63,5 +63,6 @@ npm run build --report
       return { x: 0, y: 0 }
     }
     ```
+15. babel-polyfill 可以解决浏览器不支持 ES6 新特性的问题
     
    
