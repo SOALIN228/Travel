@@ -54,6 +54,7 @@ npm run build --report
 
     解决：使用observeParents: true, observer: true让 swiper 在DOM改变时自动刷新
 12. 如果在组件中绑定事件，在组件移除时一定要及时进行事件解绑，避免造成全局的影响
+
     如果使用了 keep-alive 在 activated 进行事件绑定，那就在 deactivated 进行事件解绑
     
    
