@@ -50,4 +50,6 @@ npm run build --report
 8. 可以把经常操作且不变的数据，放到 update 中，避免重复创建，对手指事件使用节流
 9. 使用 vuex 做组件之间数据的传递，使用 localStorage 做本地存储，记得要处理异常，解决浏览器兼容问题
 10. 在 router-view 外面添加 keep-alive 页面只会在第一次进入发 http 请求，如果想要重新请求要在生命周期 activated 中重新发送请求
+11. 使用 v-show 切换轮播时，由于 DOM 发生了改变 swiper 会出现问题
 
+    解决：使用observeParents: true, observer: true让 swiper 在DOM改变时自动刷新
